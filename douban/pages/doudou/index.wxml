@@ -1,0 +1,23 @@
+<view wx:for="{{ boards }}" wx:key="{{ item.key }}" class="weui-panel weui-panel_access">
+  <view class="weui-panel_hd">{{ item.title }}</view>
+  <view class="weui-panel_bd">
+    <view style="padding:10px;" class="weui-media-box weui-media-box_a">
+      <scroll-view scroll-x>
+        <view style="display:flex;">
+          <navigator url="item?id={{ item.id }}" wx:for="{{ item.movies }}" wx:key="{{ item.id }}">
+            <view style="display:flex;flex-direction:column;width:180rpx;margin:10rpx;" >
+              <image style="width:180rpx;height:250rpx;" src="{{ item.images.large }}" mode="aspectFill" />
+              <text style="text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:13px;padding-top:5rpx;">{{ item.title }}</text>
+            </view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="weui-panel__ft">
+    <navigator class="weui-cell weui-cell_access weui-cell_link">
+      <view class="weui-cell__bd">更多</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>

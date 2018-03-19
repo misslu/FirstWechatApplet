@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/doudou/index",
+    "pages/doudou/list",
+    "pages/doudou/item",
+    "pages/doudou/splash",   
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆豆",
+    "navigationBarTextStyle":"black"
+  }
+}
